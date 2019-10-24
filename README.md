@@ -2,7 +2,7 @@
 
 Get texts by date using image segmentation and OCR from PDF of Marukoshi's Deluxe Menu.
 
-[Converted example](https://github.com/passionate-engineer/marukoshi-deluxe-menu-texts/blob/master/resources/output.json)
+[Converted sample](https://github.com/passionate-engineer/marukoshi-deluxe-menu-texts/blob/master/resources/output.json)
 
 ![](https://raw.githubusercontent.com/passionate-engineer/marukoshi-deluxe-menu-texts/master/docs/keyvisual.jpg)
 
