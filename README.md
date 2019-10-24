@@ -1,7 +1,7 @@
 # Marukoshi Deluxe Menu Texts
 
 Get texts by date using image segmentation and OCR from The Deluxe Menu of Marukoshi.
-[Converted Example](https://github.com/passionate-engineer/marukoshi-deluxe-menu-texts/blob/master/resources/output.json)
+[Converted example](https://github.com/passionate-engineer/marukoshi-deluxe-menu-texts/blob/master/resources/output.json)
 
 ![](https://github.com/passionate-engineer/marukoshi-deluxe-menu/blob/master/docs/kv.jpg)
 
