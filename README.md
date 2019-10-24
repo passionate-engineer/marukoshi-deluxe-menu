@@ -1,6 +1,8 @@
-# Marukoshi deluxe menu
+# Get Marukoshi deluxe menu texts
 
 Get texts by date using image segmentation and OCR from The Deluxe Menu of Marukoshi.
+
+![](https://github.com/passionate-engineer/marukoshi-deluxe-menu/blob/master/docs/kv.jpg)
 
 ## Installation
 
