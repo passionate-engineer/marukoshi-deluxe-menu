@@ -1,4 +1,4 @@
-# Marukoshi deluxe menu texts
+# Marukoshi Deluxe Menu Texts
 
 Get texts by date using image segmentation and OCR from The Deluxe Menu of Marukoshi.
 
