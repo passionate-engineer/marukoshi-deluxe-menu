@@ -3,12 +3,6 @@ const Jimp = require("jimp");
 const PDF2Pic = require("pdf2pic");
 const Tesseract = require("node-tesseract-ocr");
 
-const tesseractConfig = {
-  lang: "jpn",
-  oem: 1, // https://ai-facets.org/tesseract-ocr-best-practices/
-  psm: 1
-};
-
 /**
  * Convert the pdf to texts and output json file.
  */
@@ -34,7 +28,7 @@ const getCalendarTexts = async (pdfPath, resourcesDir) => {
   let calendarTexts = {};
 
   const pdf2pic = new PDF2Pic({
-    density: 100, // output pixels per inch
+    density: 300, // output pixels per inch
     savename: "deluxe", // output file name
     savedir: resourcesDir, // output file location
     format: "png", // output file format
@@ -51,17 +45,19 @@ const getCalendarTexts = async (pdfPath, resourcesDir) => {
       const jimp = await Jimp.read(resourcesDir + pdfImageInfo.name);
       await jimp.crop(width * j + marginX, height * i + marginY, width, height);
 
-      const imagePath = resourcesDir + "/clips/" + (i * 5 + j) + ".jpg";
+      const imagePath = resourcesDir + "/clips/" + (i * 5 + j) + ".png";
       await jimp.write(imagePath);
-      const result = await Tesseract.recognize(imagePath, tesseractConfig);
+      const result = await Tesseract.recognize(imagePath, { lang: "jpn" });
       const date = result.match(/^\d+月\d+日/);
+      console.log(j)
+      console.log(result)
       if (date) {
         calendarTexts[date[0]] = result
           .replace(date[0] + "\n", "")
           .replace(/\n\n/g, "\n")
           .trim();
-        console.log(date[0]);
-        console.log(calendarTexts[date[0]] + "\n");
+        // console.log(date[0]);
+        // console.log(calendarTexts[date[0]] + "\n");
       }
     }
   }
