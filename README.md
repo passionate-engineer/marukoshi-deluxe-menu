@@ -1,4 +1,4 @@
-# Marukoshi deluxe menu texts
+# Marukoshi Deluxe Menu Texts
 
 Get texts by date using image segmentation and OCR from The Deluxe Menu of Marukoshi.
 
@@ -13,7 +13,7 @@ npm install
 
 ## Convert
 
-1. Add "deluxe1.pdf" to the "./resources" directory.
+1. Add "deluxe1.pdf" to "./resources" directory.
 2. The following command will convert it.
 
 ```bash
