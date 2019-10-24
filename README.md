@@ -12,7 +12,7 @@ brew install imagemagick graphicsmagick ghostscript tesseract tesseract-lang
 npm install
 ```
 
-## Convert
+## Conversion
 
 1. Add "deluxe1.pdf" to "./resources" directory.
 2. The following command will convert it.
