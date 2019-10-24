@@ -13,7 +13,7 @@ npm install
 
 ## Convert
 
-1. Add "deluxe1.pdf" to the "./resources" directory.
+1. Add "deluxe1.pdf" to "./resources" directory.
 2. The following command will convert it.
 
 ```bash
