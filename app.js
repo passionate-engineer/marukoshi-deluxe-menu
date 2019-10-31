@@ -12,8 +12,10 @@ const main = async () => {
     "./resources/"
   );
   console.log(calendarTexts);
+
+  const path =  (process.argv[2]) ? './json/' + process.argv[2] + '.json' : "./resources/output.json"
   fs.writeFileSync(
-    "./resources/output.json",
+    path,
     JSON.stringify(calendarTexts, null, "\t")
   );
 };
