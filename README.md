@@ -23,3 +23,7 @@ npm start
 ```
 
 3. "output.json" is created to  "./resources" directory.
+
+## Raw
+
+https://raw.githubusercontent.com/passionate-engineer/marukoshi-deluxe-menu-texts/master/json/201910.json
