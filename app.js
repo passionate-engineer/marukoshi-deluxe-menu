@@ -51,7 +51,7 @@ const getCalendarTexts = async (pdfPath, resourcesDir) => {
       await jimp.write(imagePath);
 
       let result = await Tesseract.recognize(imagePath, { lang: "jpn", psm: 6 });
-      result = result.replace('晶');
+      result = result.replace('晶', '日');
       const date = result.match(/^\d+月\d+日/);
       console.log(j)
       console.log(result)
